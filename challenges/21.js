@@ -13,7 +13,12 @@
 // stringsplosion('ab') → 'aab'
 
 function stringsplosion(s) {
-  // implement
-}
+  let str = "";
+  for (let i=0; i<s.length; i++){
+    str += s.substr(0, i+1);
+  }
+    return str;
+}        
+    
 
 module.exports = stringsplosion;
